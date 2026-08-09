@@ -1,12 +1,12 @@
 import demo_pay
 
-client = demo_pay.PayClient()
+c1 = demo_pay.PayClient()
 
 
 def bill(amount):
-    customer = client.customers.create(email="a@b.com")
-    return client.charges.create(
-        amount=amount,
+    c3 = c1.customers.create(email="a@b.com")
+    return c1.charges.create(
+        c2=amount,
         currency="usd",
         source="tok_visa",
     )
