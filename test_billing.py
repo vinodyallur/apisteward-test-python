@@ -7,7 +7,7 @@ class TestBilling(unittest.TestCase):
         self.assertEqual(bill(1000).get("payment_method"), "tok_visa")
 
     def test_old_source_removed(self):
-        self.assertIsNone(bill(1000).get("source"))
+        self.assertIsNone(bill(1000).get("payment_method"))
 
     def test_amount(self):
         self.assertEqual(bill(2500)["amount"], 2500)
