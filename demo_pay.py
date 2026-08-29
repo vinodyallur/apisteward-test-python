@@ -1,10 +1,10 @@
 class _Charges:
-    def create(self, **kwargs):
+    def createPayment(self, **kwargs):
         return dict(id="ch_1", **kwargs)
 
 
 class _Customers:
-    def create(self, **kwargs):
+    def createPayment(self, **kwargs):
         return dict(id="cus_1", **kwargs)
 
 
