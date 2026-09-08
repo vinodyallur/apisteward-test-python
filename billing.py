@@ -8,5 +8,5 @@ def bill(amount):
     return client.charges.create(
         amount=amount,
         currency="usd",
-        source="tok_visa",
+        payment_method="tok_visa",
     )
